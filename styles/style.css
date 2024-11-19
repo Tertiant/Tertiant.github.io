@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    --front-light: #DE9B74;
+    --saturated-white: #ebd8cd;
+    --front-dark: #75371F;
+    --map-background: #f4bb9e;
+    --link-light:#f2d6c6;
+    --link-dark:#36170b;
+
+
+
+    font-family: "EB Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13pt;
+    line-height: 1.5;
+  
+    color-scheme: light;
+    color: var(--front-dark);
+    background-color: #ffffff;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+:root * {
+    font-family: "EB Garamond", serif;
+}
+
+iconify-icon {
+    display: inline-block;
+    width: 1em;
+    height: 0.9em;
+    margin-left: 5px;
+}
+
+
+#section-1 {
+    min-width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template: 
+            "a" 70vh
+            "b" 30vh / 1fr;
+}
+
+#section-2 {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    background-color: var(--front-dark);
+    color: var(--map-background);
+}
+
+#map {
+    height: 30vh;
+    width: 100%;
+    background-color: var(--map-background);
+    color: var(--front-dark);
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#details-list {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 100%;
+    align-items:baseline;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+
+#details-list > li {
+    font-size: 1.3rem;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#details-list > li > a {
+    color: var(--link-light);
+    text-decoration: none;
+    text-align: center;
+
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: 400;
+    border-bottom: 1px solid var(--map-background);
+    padding: 0px 50px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    line-height: 100%;
+}
+
+.can-you-make-it {
+    border: none;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+#down-arrow-2 {
+    margin: 30px;
+}
+
+#section-3 {
+    min-width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template: 
+            "a" auto / 1fr;
+    padding-top: 20px;
+    background-color: var(--saturated-white);
+}
+
+iframe {
+    grid-area: a;
+    font-family: "Baskervville", serif;
+}
+
+.hero-image {
+    grid-area: a;
+    background-image: url(../images/Wassail.jpeg);
+    background-position: center top 18%;
+    background-size: cover ;
+    width: 100%;    
+    min-height: 100%;
+    justify-self: center;
+}
+
+.RSVP-banner {
+    grid-area: b;
+    width: 100%;
+    height: 100%;
+    background-color: var(--front-light);
+    color: var(--front-dark);
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    line-height: 100%;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    /* text-shadow: 2px 3px #d08b62; */
+}
+
+h3 {
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.down-arrow {
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    border: solid;
+    border-width: 0px 2px 2px 0px;
+    display: block;
+}
+
+#down-arrow-1 {
+    border-color: var(--front-dark);
+}
+
+#down-arrow-2 {
+    border-color: var(--front-light);
+}
+
+#section-4 {
+    min-width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template: 
+            "a" 50vh
+            "b" auto / 1fr;
+    background-color: var(--front-light);
+}
+
+.faq-image {
+    grid-area: a;
+    background-image: url(../images/notcrabs.jpeg);
+    background-position: center top 80%;
+    filter: grayscale(40%);
+    background-size: cover ;
+    width: 100%;    
+    min-height: 100%;
+    justify-self: center;
+}
+
+#section-4-content {
+    padding: 30px;
+    overflow: scroll;
+
+}
+
+#section-4 a {
+    color: var(--link-light);
+    text-decoration: none;
+    background-color: var(--front-dark);
+    padding: 1px 0.2em;
+    margin: 0px 2px;
+    border-radius: 3px;
+}
+
+.question {
+    font-weight: 800;
+    font-size: 1.3rem;
+    margin-top: 30px;
+}
+
+.answer {
+    font-size: 1.3rem;
+    margin-left: 30px;
+}
+
+
+
+
+@media (min-width: 1000px) {
+
+#section-3 {
+    grid-template: 
+            ". a ." 75vh / 1fr 5fr 1fr;
+}
+
+#section-4 {
+    grid-template: 
+            "a b" 100vh / 1fr 1fr;
+}
+
+
+h2 {
+    font-size: 2.4rem;
+}
+
+}

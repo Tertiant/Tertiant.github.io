@@ -1,8 +1,99 @@
 <!DOCTYPE html>
 <html>
+<head lang="en">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Jim & Deanna</title>    
+    <!-- Author: Jim Hodgson  -->
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.css" rel="stylesheet">
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+
+</head>
 <body>
-<h1>Hello World Test 2</h1>
-<p>I'm hosted with GitHub Pages.</p>
-<img src="images/Wassail.jpeg">
+    <section id="section-1">
+        <div class="hero-image"></div>
+        <div class="RSVP-banner">
+            <h2>We're getting married!</h2>
+            <div class="down-arrow" id="down-arrow-1"><span></span></div>
+        </div>
+        
+    </section>        
+    <section id="section-2">
+        <div id="map">Loading map...</div>
+            <ul id="details-list">
+                <li>
+                    <h4>Where</h4>
+                    <a href="https://maps.app.goo.gl/q77njuKMwniSiYA59" target="_blank">Whonnock Lake Centre <br>27871 113 Ave, Maple Ridge  <iconify-icon icon="quill:link-out"  style="color: #fde8dc"></iconify-icon></a>
+                </li>
+                <li>
+                    <h4>When</h4>
+                    <p>4:00 PM to 11:00 PM</p>
+                    <p>Friday, May 30th 2025</p>
+                </li>
+            </ul>
+            <h4 class="can-you-make-it">Can you make it?</h4>
+            <div class="down-arrow" id="down-arrow-2"><span></span></div>
+    </section>
+    <section id="section-3">
+        <iframe id="RSVPframe" src="https://docs.google.com/forms/d/e/1FAIpQLSeYyPLmGKfn3ETd5g_fZMdh6Be6xH-KqTYfIXYyBlvmkUdg_w/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>    
+    </section>
+    <section id="section-4">
+        <div class="faq-image"></div>
+        <div id="section-4-content">
+            <h3>Questions We Think You Might Ask</h3>
+            <ul>
+                <li>
+                    <p class="question">When should I RSVP by?</p>
+                    <p class="answer">Please let us know if you can make it by May 1st at the latest</p>
+                </li>
+                <li>
+                    <p class="question">Can I bring a +1?</p>
+                    <p class="answer">Anyone listed on your invite is more than welcome!</p>
+                </li>
+                <li>
+                    <p class="question">What should I wear?</p>
+                    <p class="answer">Whatever makes you feel good and comfortable! We are so happy to have you celebrating with us.</p>
+                </li>
+                <li>
+                    <p class="question">Is the wedding indoors or outdoors?</p>
+                    <p class="answer">Our wedding ceremony will be outdoors, but our reception will be indoors. In the event of rain, both portions will take place indoors.</p>
+                </li>
+                <li>
+                    <p class="question">Will there be food?</p>
+                    <p class="answer">Absolutely, lots! Let us know in the RSVP form above if you have any dietary considerations we should know about.</p>                
+                </li>
+                <li>
+                    <p class="question">How can I get to the venue?</p>
+                    <p class="answer">Unfortunately, the venue is not very accessible via transit. We have put together a <a target="_blank" href="https://docs.google.com/spreadsheets/d/1_pcF2hoV0Ueq6jGZbh2jDwMk9c7swG0GjO2aCSvyS6M/edit?usp=sharing">carpooling coordination spreadsheet <iconify-icon icon="quill:link-out"  style="color: #fde8dc"></iconify-icon></a>, if you are looking for a ride or are able to give someone a ride, please consider signing up.</p>
+                </li>
+                <li>
+                    <p class="question">What is parking like?</p>
+                    <p class="answer">There are 19 reserved parking spots for our wedding in the lot closest to the building, with additional parking spots a short walk away. You are encouraged, if you are able, to park in the general parking area slightly past the venue. This allows guests who may not be able to walk the full distance to park as close as possible. Please stay safe and default to a ride service or carpooling if you plan to drink.</p>
+                </li>
+                <li>
+                    <p class="question">Is it okay to take pictures with our phones and cameras during the wedding?</p>
+                    <p class="answer">Yes! We would love for you to take photos and share them with us. However, please refrain from taking photos during the ceremony to be fully present.</p>
+                </li>
+                <li>
+                    <p class="question">Where will updates be posted?</p>
+                    <p class="answer">Check back to this website, we will be adding additional information as details are finalized.</p>
+                </li>
+                <li>
+                    <p class="question">Wait, I have more questions!</p>
+                    <p class="answer">Please feel free to email Jim at jshodgson@gmail.com if you have any other questions, comments, or concerns. We look forward to seeing you there!</p>
+                </li>
+            </ul>
+        </div>
+        
+    </section>
 </body>
 </html>
