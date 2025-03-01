@@ -125,11 +125,10 @@ h4 {
 
 #section-3 {
     min-width: 100%;
-    min-height: 80vh;
+    min-height: 550px;
     display: grid;
     grid-template: 
-            "a" auto 
-            "b" 20vh / 1fr;
+            "a" auto;
 
     padding-top: 20px;
     background-color: var(--front-light);
@@ -227,13 +226,13 @@ h3:last-child {
     min-height: 100vh;
     display: grid;
     grid-template: 
-            "a" 50vh
-            "b" auto / 1fr;
+            "a" auto
+            "b" 50vh / 1fr;
     background-color: var(--saturated-white);
 }
 
 .faq-image {
-    grid-area: a;
+    grid-area: b;
     background-image: url(../images/notcrabs.jpeg);
     background-position: center top 80%;
     filter: grayscale(40%);
@@ -244,6 +243,7 @@ h3:last-child {
 }
 
 #section-4-content {
+    grid-area: a;
     padding: 30px;
     overflow: scroll;
 
@@ -299,12 +299,22 @@ footer {
 
 #section-3 {
     grid-template: 
-            ". a ." 75vh / 1fr 5fr 1fr;
+            ". a ." 100% / 1fr 5fr 1fr;
 }
 
 #section-4 {
     grid-template: 
             "a b" 100vh / 3fr 4fr;
+
+    .faq-image {
+                grid-area: a;
+    }
+
+    #section-4-content {
+        grid-area: b;
+    }
+
+
 }
 
 
